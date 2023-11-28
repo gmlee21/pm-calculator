@@ -22,30 +22,5 @@ async function fetchData() {
   }
 }
 
-// Call the fetchData function
-fetchData();
-
-
-// async function fetchDataII() {
-//   try {
-//     const { dataII, errorII } = await db
-//       .from('rtDevelopment')
-//       .select();
-
-//     if (errorII) {
-//       console.error('Error fetching data:', errorII.message);
-//       return;
-//     }
-
-//     // Log the data to the console
-//     console.log('Fetched data:', dataII);
-
-//     // Add logic here to display the data in your application (e.g., update the UI)
-
-//   } catch (error) {
-//     console.error('An unexpected error occurred:', error.message);
-//   }
-// }
-
 // // Call the fetchData function
-// fetchDataII();
+  fetchData();

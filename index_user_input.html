@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management Man-Effort Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles_user_input.css">
+    <script src="index_user_input.js"defer></script> <!--The defer attribute is optional but is often used to ensure that the script is executed after the HTML document has been fully parsed.-->
+
+</head>
+    
+<body>
+
+    <h1>Project Management Man-Effort Calculator</h1>
+
+    <form id="calulator" action="/submit_form" method="post"> <!-- need to replace "/submit_form" with the URL to process the data from the form-->
+        <label for="projectType">What is the type of project?</label>
+        <select id="projectType" required>
+            <option value="0"></option>
+            <option value="1">Research and Trial - Commercial Off The Shelf Solutions</option>
+            <option value="2">Research and Trial - Development</option>
+            <option value="3">Equipping</option>
+        </select>
+        
+        <label for="procurementApproach"><br><br>What is the procurement approach for the project?</label>
+        <select id="procurementApproach" required>
+            <option value="0"></option>
+            <option value="1">Invitation to Quote (ITQ)</option>
+            <option value="2">Invitation to Tender (ITT)</option>
+            <option value="3">Direct Contracting (DC) - ITQ Value</option>
+            <option value="4">Direct Contracting (DC) - ITT Value</option>
+        </select>
+        
+        <div id="additionalInput1" class="hidden">
+            <label for="developmentScale"><br><br>What is the scale of the development involved in the project?</label>
+            <select id="developmentScale" required>
+                <option value="0"></option>
+                <option value="1">Tier 1</option>
+                <option value="2">Tier 2</option>
+                <option value="3">Tier 3</option>
+                <option value="4">Tier 4</option>
+            </select>
+            <p>Remarks: Using the proportion of non-recurring engineering (NRE) manpower cost vis-a-vis the total project manpower cost (i.e. sum of NRE and project management costs, less trial support manpower cost) as yardstick:
+            <br><br>Tier 1 - Largely systems integration (NRE cost is less than or equal to 25% of total project manpower cost)
+            <br><br>Tier 2 - Minor developement with systems integration (NRE cost is more than 25% and less than or equal to 50% of total project manpower cost)
+            <br><br>Tier 3 - Significant developement with systems integration (NRE cost is more than 50% and less than or equal to 75% of total project manpower cost)
+            <br><br>Tier 4 - Full scale development (2 - Minor developement with systems integration (NRE cost is more than 75% of total project manpower cost)
+        </div>
+
+        <div id="additionalInput2" class="hidden">   
+            <label for="systemCost"><br><br>What is the unit system cost of the project?</label>
+            <select id="systemCost" required>
+                <option value="0"></option>
+                <option value="1">Less than or equal to S$10,000</option>
+                <option value="2">More than S$10,000 and less than or equal to S$100,000</option>
+                <option value="3">More than S$100,000 and less than or equal to S$500,000</option>
+                <option value="4">More than S$500,000</option>
+            </select>
+        </div>
+        
+        <div id="additionalInput3" class="hidden">
+            <label for="trialDuration"><br><br>What is the duration of the trial period in months?</label>
+            <input type="number" id="trialDuration">
+
+        <br><br><input type="submit" value="Generate Table">
+        </div>
+    </form>
+
+    <a href="#" onclick="goBack()" class="back-button">Back</a>
+
+</body>
+</html>

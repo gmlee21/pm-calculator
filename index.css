@@ -16,7 +16,6 @@ body {
 
 img {
   max-width: 100%;
-  max-height: 100%;
   width: auto;
   height: auto;
   object-fit: cover; /* Maintain aspect ratio and cover the entire container */
@@ -24,17 +23,10 @@ img {
   align-items: center;
 }
 
-.image-container {
-  text-align: center;
-}
-
-.image-container img {
-  max-width: 100%; /* Ensures the image doesn't exceed the width of its container */
-}
-
 h1 {
   color: #333333;
   text-align: center;
+  font-size: 35px;
 }
 
 #options {

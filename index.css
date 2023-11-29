@@ -24,6 +24,14 @@ img {
   align-items: center;
 }
 
+.image-container {
+  text-align: center;
+}
+
+.image-container img {
+  max-width: 100%; /* Ensures the image doesn't exceed the width of its container */
+}
+
 h1 {
   color: #333333;
   text-align: center;

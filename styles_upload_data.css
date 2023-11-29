@@ -5,18 +5,23 @@ h1 {
   }
 
 .back-button {
-    margin-top: 20px;
-    font-size: 16px;
-    text-decoration: none;
-    color: #333333;
-    padding: 5px 10px;
-    border: 1px solid #333333;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+  font-family: Arial, sans-serif;  
+  font-size: 16px;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #1d04fd;
+  padding: 5px 10px;
+  border: 1px solid #1d04fd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .back-button:hover {
   background-color: #333333;
   color: #ffffff;
+}
+
+.back-button-container {
+  margin-top: 50px;
 }

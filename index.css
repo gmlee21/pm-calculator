@@ -20,6 +20,8 @@ img {
   width: auto;
   height: auto;
   object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
